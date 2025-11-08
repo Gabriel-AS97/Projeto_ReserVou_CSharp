@@ -12,20 +12,13 @@ namespace ReserVou.Servico
             _repositorio = repositorio;
         }
 
-        public void Adicionar(Estabelecimento estabelecimento)
-        {
-            if (string.IsNullOrWhiteSpace(Estabelecimento.Nome_Estabelecimento))
-                throw new Exception("O nome do estabelecimento é obrigatório.");
-
-            _repositorio.Adicionar(estabelecimento);
-        }
-        public List<Estabelecimento> ObterTodos() => _repositorio.ObterTodos();
-
         public void AdicionarEstabelecimento(string nome_estabelecimento, string endereco_estabelecimento)
         {
             var estabelecimento = new Estabelecimento(nome_estabelecimento, endereco_estabelecimento);
-            _repositorio.Salvar(estabelecimento);
+            _repositorio.Adicionar(estabelecimento);
         }
+
+        public List<Estabelecimento> ObterTodos() => _repositorio.ObterTodos();
 
         public Estabelecimento ObterPorId(int id_estabelecimento) => _repositorio.ObterPorId(id_estabelecimento);
 

@@ -9,6 +9,5 @@ namespace ReserVou.Repositorio
         Estabelecimento ObterPorId(int id_estabelecimento);
         void Atualizar(Estabelecimento estabelecimento);
         void Remover(int id_estabelecimento);
-        void Salvar(Estabelecimento estabelecimento);
     }
 }

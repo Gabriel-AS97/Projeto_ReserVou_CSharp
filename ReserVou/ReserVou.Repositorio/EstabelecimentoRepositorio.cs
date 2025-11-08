@@ -5,15 +5,9 @@ namespace ReserVou.Repositorio
     public class EstabelecimentoRepositorio : IEstabelecimentoRepositorio
     {
         private readonly List<Estabelecimento> _estabelecimentos = new();
-
-        public void Adicionar(Estabelecimento estabelecimento)
-        {
-            _estabelecimentos.Add(estabelecimento);
-        }
-              
         private int _proximoId = 1;
 
-        public void Salvar(Estabelecimento estabelecimento)
+        public void Adicionar(Estabelecimento estabelecimento)
         {
             estabelecimento.Id_Estabelecimento = _proximoId++;
             _estabelecimentos.Add(estabelecimento);
