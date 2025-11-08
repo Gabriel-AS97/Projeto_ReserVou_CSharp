@@ -7,7 +7,23 @@ namespace ReserVou.Repositorio
         private readonly List<Estabelecimento> _estabelecimentos = new();
         private int _proximoId = 1;
 
+        private readonly EstabelecimentoDBContext _context;
+        public EstabelecimentoRepositorio(EstabelecimentoDBContext context)
+        {
+            _context = context;
+        }
+
         public void Adicionar(Estabelecimento estabelecimento)
+        {
+            _context.Estabelecimentos.Add(estabelecimento);
+            _context.SaveChanges();
+        }
+        /* public void Adicionar(Estabelecimento estabelecimento)
+        {
+            _estabelecimentos.Add(estabelecimento);
+        }*/
+
+        public void Salvar(Estabelecimento estabelecimento)
         {
             estabelecimento.Id_Estabelecimento = _proximoId++;
             _estabelecimentos.Add(estabelecimento);
