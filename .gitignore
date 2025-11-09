@@ -47,3 +47,15 @@ _ReSharper*/
 # Arquivos de sistema
 Thumbs.db
 Desktop.ini
+
+# Angular / Node
+node_modules/
+dist/
+.tmp/
+.angular/cache/
+package-lock.json
+
+# IDE/OS
+.vscode/
+.DS_Store
+Thumbs.db
