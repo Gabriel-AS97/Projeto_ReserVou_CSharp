@@ -1,3 +1,6 @@
-<!-- src/app/app.component.html -->
-<h1>Projeto ReserVou</h1>
-<app-estabelecimento></app-estabelecimento>
+<nav>
+    <button (click)="irParaLista()">Listar Estabelecimentos</button>
+    <button (click)="irParaAdicionar()">Cadastrar Estabelecimento</button>
+   </nav>
+   <hr>
+   <router-outlet></router-outlet>

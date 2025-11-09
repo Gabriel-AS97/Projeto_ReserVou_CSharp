@@ -1,0 +1,12 @@
+<h2>Cadastro de Estabelecimento</h2>
+<form (ngSubmit)="adicionar()">
+ <label>
+Nome:
+<input [(ngModel)]="nome_estabelecimento" name="Nome do estabelecimento" required />
+ </label>
+ <label>
+Endereço:
+<input type="number" [(ngModel)]="endereco_estabelecimento" name="Endereço do estabelecimento" required />
+ </label>
+ <button type="submit">Salvar</button>
+</form>
