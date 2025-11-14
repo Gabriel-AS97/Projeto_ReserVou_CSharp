@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Projetos\\Fullstack\\Projeto_ReserVou\\ReserVou\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{84D5428B-28A1-4414-B2EA-0B067C43D48A}|ReserVou.WebApi\\ReserVou.WebApi.csproj|c:\\projetos\\fullstack\\projeto_reservou\\reservou\\reservou.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84D5428B-28A1-4414-B2EA-0B067C43D48A}|ReserVou.WebApi\\ReserVou.WebApi.csproj|solutionrelative:reservou.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D5428B-28A1-4414-B2EA-0B067C43D48A}|ReserVou.WebApi\\ReserVou.WebApi.csproj|c:\\projetos\\fullstack\\projeto_reservou\\reservou\\reservou.webapi\\controllers\\estabelecimentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84D5428B-28A1-4414-B2EA-0B067C43D48A}|ReserVou.WebApi\\ReserVou.WebApi.csproj|solutionrelative:reservou.webapi\\controllers\\estabelecimentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projetos\\Fullstack\\Projeto_ReserVou\\ReserVou\\ReserVou.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "ReserVou.WebApi\\Program.cs",
+              "ToolTip": "C:\\Projetos\\Fullstack\\Projeto_ReserVou\\ReserVou\\ReserVou.WebApi\\Program.cs",
+              "RelativeToolTip": "ReserVou.WebApi\\Program.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACsAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T08:01:12.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EstabelecimentoController.cs",
+              "DocumentMoniker": "C:\\Projetos\\Fullstack\\Projeto_ReserVou\\ReserVou\\ReserVou.WebApi\\Controllers\\EstabelecimentoController.cs",
+              "RelativeDocumentMoniker": "ReserVou.WebApi\\Controllers\\EstabelecimentoController.cs",
+              "ToolTip": "C:\\Projetos\\Fullstack\\Projeto_ReserVou\\ReserVou\\ReserVou.WebApi\\Controllers\\EstabelecimentoController.cs",
+              "RelativeToolTip": "ReserVou.WebApi\\Controllers\\EstabelecimentoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T07:57:52.037Z",
+              "EditorCaption": ""
             }
           ]
         }

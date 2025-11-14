@@ -1,4 +1,32 @@
-<h2>Cadastro de Estabelecimento</h2>
+<h2>Novo Estabelecimento</h2>
+<form [formGroup]="form" (ngSubmit)="adicionar()">
+    <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input matInput formControlName="nome" />
+        <mat-error *ngIf="form.get('nome')?.hasError('required')">Nome obrigatório</mat-error>
+        <mat-error *ngIf="form.get('nome')?.hasError('minlength')">Mínimo 3 caracteres</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Endereço</mat-label>
+        <input matInput type="number" formControlName="nota" />
+        <mat-error *ngIf="form.get('nota')?.hasError('required')">Endereço obrigatório</mat-error>
+        <mat-error *ngIf="form.get('nome')?.hasError('minlength')">Mínimo 3 caracteres</mat-error>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">
+        Salvar
+    </button>
+</form>
+
+<style>
+    .full-width {
+    width: 100%;
+    margin-bottom: 1rem;
+ }
+</style>
+
+<!--<h2>Cadastro de Estabelecimento</h2>
 <form (ngSubmit)="adicionar()">
  <label>
 Nome:
@@ -6,7 +34,7 @@ Nome:
  </label>
  <label>
 Endereço:
-<input type="number" [(ngModel)]="endereco_estabelecimento" name="Endereço do estabelecimento" required />
+<input [(ngModel)]="endereco_estabelecimento" name="Endereço do estabelecimento" required />
  </label>
  <button type="submit">Salvar</button>
-</form>
+</form>-->
