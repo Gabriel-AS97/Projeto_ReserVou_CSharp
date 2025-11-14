@@ -20,7 +20,7 @@ namespace ReserVou.WebApi.Controllers
         public IActionResult Adicionar([FromBody] Estabelecimento estabelecimento)
         {
             _estabelecimentoServico.AdicionarEstabelecimento(estabelecimento.Nome_Estabelecimento, estabelecimento.Endereco_Estabelecimento);
-            return Ok(estabelecimento);
+            return Ok(new { mensagem = "Estabelecimento adicionado com sucesso" });
         }
 
         [HttpGet]
@@ -39,7 +39,7 @@ namespace ReserVou.WebApi.Controllers
         {
             estabelecimento.Id_Estabelecimento = id_estabelecimento;
             _estabelecimentoServico.AtualizarEstabelecimento(estabelecimento);
-            return Ok(estabelecimento);
+            return Ok(new { mensagem = "Estabelecimento alterado com sucesso" });
         }
 
         [HttpDelete("{id_estabelecimento}")]
