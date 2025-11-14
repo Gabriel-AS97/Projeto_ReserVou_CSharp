@@ -12,41 +12,38 @@ namespace ReserVou.Repositorio
         {
             _context = context;
         }
-
         public void Adicionar(Estabelecimento estabelecimento)
         {
             _context.Estabelecimentos.Add(estabelecimento);
             _context.SaveChanges();
         }
-        /* public void Adicionar(Estabelecimento estabelecimento)
+        /*public void Adicionar(Estabelecimento estabelecimento)
         {
+            estabelecimento.Id= _proximoId++;
             _estabelecimentos.Add(estabelecimento);
         }*/
-
-        public void Salvar(Estabelecimento estabelecimento)
+        public List<Estabelecimento> ObterTodos()
         {
-            estabelecimento.Id_Estabelecimento = _proximoId++;
-            _estabelecimentos.Add(estabelecimento);
+            return _context.Estabelecimentos.ToList();
         }
-
-        public List<Estabelecimento> ObterTodos() => _estabelecimentos;
-
-        public Estabelecimento ObterPorId(int id_estabelecimento) => _estabelecimentos.FirstOrDefault(a => a.Id_Estabelecimento == id_estabelecimento);
-
+        //public List<Estabelecimento> ObterTodos() => _estabelecimentos;
+        /*
+        public Estabelecimento ObterPorId(int id) => _estabelecimentos.FirstOrDefault(a => a.Id == id);
+        
         public void Atualizar(Estabelecimento estabelecimento)
         {
-            var existente = ObterPorId(estabelecimento.Id_Estabelecimento);
+            var existente = ObterPorId(estabelecimento.Id);
             if (existente != null)
             {
-                existente.Nome_Estabelecimento = estabelecimento.Nome_Estabelecimento;
-                existente.Endereco_Estabelecimento = estabelecimento.Endereco_Estabelecimento;
+                existente.Nome = estabelecimento.Nome;
+                existente.Endereco = estabelecimento.Endereco;
             }
         }
 
-        public void Remover(int id_estabelecimento)
+        public void Remover(int id)
         {
-            var estabelecimento = ObterPorId(id_estabelecimento);
+            var estabelecimento = ObterPorId(id);
             if (estabelecimento != null) _estabelecimentos.Remove(estabelecimento);
-        }
+        }*/
     }
 }

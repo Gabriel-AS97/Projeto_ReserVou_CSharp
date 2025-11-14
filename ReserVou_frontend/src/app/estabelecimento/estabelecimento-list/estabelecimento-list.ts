@@ -10,7 +10,7 @@ import { RouterModule, Router } from '@angular/router';
 @Component({
   selector: 'app-estabelecimento-list',
   standalone: true,
-  imports: [CommonModule, MatTableModule, MatButtonModule, RouterModule],
+  imports: [CommonModule, MatTableModule, MatButtonModule, RouterModule, MatToolbarModule],
   templateUrl: './estabelecimento-list.html',
 })
 
@@ -21,11 +21,19 @@ export class EstabelecimentoListComponent implements OnInit {
     constructor(private estabelecimentoService: EstabelecimentoService, private router: Router) { }
 
     ngOnInit(): void {
-    this.estabelecimentoService.adicionar().subscribe({
+    this.estabelecimentoService.obterTodos().subscribe({
     next: (dados) => (this.estabelecimentos = dados),
     error: () => alert('Erro ao carregar estabelecimentos.'),
 });
   }
+
+  irParaLista() {
+    this.router.navigate(['/']);
+ }
+
+  irParaAdicionar() {
+    this.router.navigate(['/novo']);
+ }
 
   editar(estabelecimento: Estabelecimento) {
   alert(`Editar estabelecimento ${estabelecimento.nome_estabelecimento} (simulação)`);
@@ -33,6 +41,7 @@ export class EstabelecimentoListComponent implements OnInit {
 
   remover(estabelecimento: Estabelecimento) {
   alert(`Remover estabelecimento ${estabelecimento.nome_estabelecimento} (simulação)`);
+  
 // Aqui você chamaria service.remover(aluno.id)
  }
 }

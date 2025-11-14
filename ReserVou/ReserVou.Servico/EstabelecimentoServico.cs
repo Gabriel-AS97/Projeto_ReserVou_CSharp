@@ -5,25 +5,27 @@ namespace ReserVou.Servico
 {
     public class EstabelecimentoServico : IEstabelecimentoServico
     {
-        private readonly IEstabelecimentoRepositorio _repositorio;
+        private readonly IEstabelecimentoRepositorio _estabelecimentos;
 
-        public EstabelecimentoServico(IEstabelecimentoRepositorio repositorio)
+        public EstabelecimentoServico(IEstabelecimentoRepositorio estabelecimento)
         {
-            _repositorio = repositorio;
+            _estabelecimentos = estabelecimento;
         }
 
-        public void AdicionarEstabelecimento(string nome_estabelecimento, string endereco_estabelecimento)
+        public void Adicionar(string nome, string endereco)
         {
-            var estabelecimento = new Estabelecimento(nome_estabelecimento, endereco_estabelecimento);
-            _repositorio.Adicionar(estabelecimento);
+            var estabelecimento = new Estabelecimento(nome, endereco);
+            _estabelecimentos.Adicionar(estabelecimento);
         }
 
-        public List<Estabelecimento> ObterTodos() => _repositorio.ObterTodos();
+        public List<Estabelecimento> ObterTodos() => _estabelecimentos.ObterTodos();
 
-        public Estabelecimento ObterPorId(int id_estabelecimento) => _repositorio.ObterPorId(id_estabelecimento);
-
+        /*
+         public Estabelecimento ObterPorId(int id_estabelecimento) => _repositorio.ObterPorId(id_estabelecimento);
+        
         public void AtualizarEstabelecimento(Estabelecimento estabelecimento) => _repositorio.Atualizar(estabelecimento);
 
         public void RemoverEstabelecimento(int id_estabelecimento) => _repositorio.Remover(id_estabelecimento);
+        */
     }
 }

@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Projetos\\Fullstack\\Projeto_ReserVou\\ReserVou\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{84D5428B-28A1-4414-B2EA-0B067C43D48A}|ReserVou.WebApi\\ReserVou.WebApi.csproj|c:\\projetos\\fullstack\\projeto_reservou\\reservou\\reservou.webapi\\controllers\\estabelecimentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84D5428B-28A1-4414-B2EA-0B067C43D48A}|ReserVou.WebApi\\ReserVou.WebApi.csproj|solutionrelative:reservou.webapi\\controllers\\estabelecimentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{84D5428B-28A1-4414-B2EA-0B067C43D48A}|ReserVou.WebApi\\ReserVou.WebApi.csproj|c:\\projetos\\fullstack\\projeto_reservou\\reservou\\reservou.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84D5428B-28A1-4414-B2EA-0B067C43D48A}|ReserVou.WebApi\\ReserVou.WebApi.csproj|solutionrelative:reservou.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84D5428B-28A1-4414-B2EA-0B067C43D48A}|ReserVou.WebApi\\ReserVou.WebApi.csproj|c:\\projetos\\fullstack\\projeto_reservou\\reservou\\reservou.webapi\\controllers\\estabelecimentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84D5428B-28A1-4414-B2EA-0B067C43D48A}|ReserVou.WebApi\\ReserVou.WebApi.csproj|solutionrelative:reservou.webapi\\controllers\\estabelecimentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29094879-D464-4DD0-9303-8042B02EAA89}|ReserVou.Servico\\ReserVou.Servico.csproj|c:\\projetos\\fullstack\\projeto_reservou\\reservou\\reservou.servico\\estabelecimentoservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29094879-D464-4DD0-9303-8042B02EAA89}|ReserVou.Servico\\ReserVou.Servico.csproj|solutionrelative:reservou.servico\\estabelecimentoservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29094879-D464-4DD0-9303-8042B02EAA89}|ReserVou.Servico\\ReserVou.Servico.csproj|c:\\projetos\\fullstack\\projeto_reservou\\reservou\\reservou.servico\\iestabelecimentoservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29094879-D464-4DD0-9303-8042B02EAA89}|ReserVou.Servico\\ReserVou.Servico.csproj|solutionrelative:reservou.servico\\iestabelecimentoservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +35,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Projetos\\Fullstack\\Projeto_ReserVou\\ReserVou\\ReserVou.WebApi\\Program.cs",
-              "RelativeDocumentMoniker": "ReserVou.WebApi\\Program.cs",
-              "ToolTip": "C:\\Projetos\\Fullstack\\Projeto_ReserVou\\ReserVou\\ReserVou.WebApi\\Program.cs",
-              "RelativeToolTip": "ReserVou.WebApi\\Program.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACsAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T08:01:12.249Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "EstabelecimentoController.cs",
               "DocumentMoniker": "C:\\Projetos\\Fullstack\\Projeto_ReserVou\\ReserVou\\ReserVou.WebApi\\Controllers\\EstabelecimentoController.cs",
               "RelativeDocumentMoniker": "ReserVou.WebApi\\Controllers\\EstabelecimentoController.cs",
               "ToolTip": "C:\\Projetos\\Fullstack\\Projeto_ReserVou\\ReserVou\\ReserVou.WebApi\\Controllers\\EstabelecimentoController.cs",
               "RelativeToolTip": "ReserVou.WebApi\\Controllers\\EstabelecimentoController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAABDAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T07:57:52.037Z",
+              "WhenOpened": "2025-11-14T21:51:00.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projetos\\Fullstack\\Projeto_ReserVou\\ReserVou\\ReserVou.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "ReserVou.WebApi\\Program.cs",
+              "ToolTip": "C:\\Projetos\\Fullstack\\Projeto_ReserVou\\ReserVou\\ReserVou.WebApi\\Program.cs",
+              "RelativeToolTip": "ReserVou.WebApi\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T21:50:11.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EstabelecimentoServico.cs",
+              "DocumentMoniker": "C:\\Projetos\\Fullstack\\Projeto_ReserVou\\ReserVou\\ReserVou.Servico\\EstabelecimentoServico.cs",
+              "RelativeDocumentMoniker": "ReserVou.Servico\\EstabelecimentoServico.cs",
+              "ToolTip": "C:\\Projetos\\Fullstack\\Projeto_ReserVou\\ReserVou\\ReserVou.Servico\\EstabelecimentoServico.cs",
+              "RelativeToolTip": "ReserVou.Servico\\EstabelecimentoServico.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T21:47:09.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IEstabelecimentoServico.cs",
+              "DocumentMoniker": "C:\\Projetos\\Fullstack\\Projeto_ReserVou\\ReserVou\\ReserVou.Servico\\IEstabelecimentoServico.cs",
+              "RelativeDocumentMoniker": "ReserVou.Servico\\IEstabelecimentoServico.cs",
+              "ToolTip": "C:\\Projetos\\Fullstack\\Projeto_ReserVou\\ReserVou\\ReserVou.Servico\\IEstabelecimentoServico.cs",
+              "RelativeToolTip": "ReserVou.Servico\\IEstabelecimentoServico.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T21:40:10.483Z",
               "EditorCaption": ""
             }
           ]

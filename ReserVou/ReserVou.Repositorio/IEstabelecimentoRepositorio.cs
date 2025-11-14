@@ -6,8 +6,11 @@ namespace ReserVou.Repositorio
     {
         void Adicionar(Estabelecimento estabelecimento);
         List<Estabelecimento> ObterTodos();
-        Estabelecimento ObterPorId(int id_estabelecimento);
+        /*
+        Estabelecimento ObterPorId(int id);
+        
         void Atualizar(Estabelecimento estabelecimento);
-        void Remover(int id_estabelecimento);
+        void Remover(int id);
+        */
     }
 }

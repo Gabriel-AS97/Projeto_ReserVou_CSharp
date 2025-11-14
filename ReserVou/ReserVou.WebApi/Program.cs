@@ -11,11 +11,11 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<EstabelecimentoDBContext>(opt => opt.UseInMemoryDatabase("EstabelecimentosDb"));
+builder.Services.AddDbContext<EstabelecimentoDBContext>(options => options.UseInMemoryDatabase("EstabelecimentoDb"));
 builder.Services.AddScoped<IEstabelecimentoRepositorio, EstabelecimentoRepositorio>();
 builder.Services.AddScoped<IEstabelecimentoServico, EstabelecimentoServico>();
 
-builder.Services.AddCors(options =>
+/*builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowLocalhost4200",
      policy =>
@@ -24,7 +24,7 @@ builder.Services.AddCors(options =>
      .AllowAnyHeader()
      .AllowAnyMethod();
      });
-});
+});*/
 
 builder.Services.AddControllers();
 
@@ -41,7 +41,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.UseCors("AllowLocalhost4200");
+/*app.UseCors("AllowLocalhost4200");*/
 
 app.MapControllers();
 

@@ -17,15 +17,37 @@ namespace ReserVou.WebApi.Controllers
         }
 
         [HttpPost]
+        public IActionResult Post(Estabelecimento estabelecimento)
+        {
+            _estabelecimentoServico.Adicionar(estabelecimento.Nome, estabelecimento.Endereco);
+            return Ok("Estabelecimento cadastrado!");
+        }
+
+        [HttpGet]
+        public IActionResult Get() => Ok(_estabelecimentoServico.ObterTodos());
+
+        /*
+        [HttpGet]
+        public IActionResult ObterTodos() => Ok(_estabelecimentoServico.ObterTodos());
+
+        [HttpPost]
         public IActionResult Adicionar([FromBody] Estabelecimento estabelecimento)
         {
-            _estabelecimentoServico.AdicionarEstabelecimento(estabelecimento.Nome_Estabelecimento, estabelecimento.Endereco_Estabelecimento);
+            _estabelecimentoServico.Adicionar(estabelecimento.Nome, estabelecimento.Endereco);
+            return Ok(estabelecimento);
+        }
+        */
+        /*[HttpPost]
+        public IActionResult Adicionar([FromBody] Estabelecimento estabelecimento)
+        {
+            _estabelecimentoServico.Adicionar(estabelecimento.Nome, estabelecimento.Endereco);
             return Ok(new { mensagem = "Estabelecimento adicionado com sucesso" });
         }
 
         [HttpGet]
-        public IActionResult Listar() => Ok(_estabelecimentoServico.ObterTodos());
-
+        public IActionResult ObterTodos() => Ok(_estabelecimentoServico.ObterTodos());
+        */
+        /*
         [HttpGet("{id_estabelecimento}")]
         public IActionResult Obter(int id_estabelecimento)
         {
@@ -47,6 +69,6 @@ namespace ReserVou.WebApi.Controllers
         {
             _estabelecimentoServico.RemoverEstabelecimento(id_estabelecimento);
             return NoContent();
-        }
+        }*/
     }
 }

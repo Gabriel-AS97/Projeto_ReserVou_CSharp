@@ -8,14 +8,14 @@ namespace ReserVou.Dominio
 {
     public class Estabelecimento
     {
-        public int Id_Estabelecimento { get; set; }
-        public string Nome_Estabelecimento { get; set; }
-        public string Endereco_Estabelecimento { get; set; }
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public string Endereco { get; set; }
 
-        public Estabelecimento(string nome_estabelecimento, string endereco_estabelecimento)
+        public Estabelecimento(string nome, string endereco)
         {
-            Nome_Estabelecimento = nome_estabelecimento;
-            Endereco_Estabelecimento = endereco_estabelecimento;
+            Nome = nome;
+            Endereco = endereco;
         }
     }
 }
